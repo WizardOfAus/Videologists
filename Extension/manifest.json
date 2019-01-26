@@ -24,5 +24,9 @@
         "128": "icons/V_icon128.jpg"
     }
   },
-  "manifest_version": 2
+  "manifest_version": 2,
+  "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    },
+   "permissions": ["activeTab"]
 }
