@@ -1,34 +1,27 @@
 {
-    "name": "Chrome Extension Example",
-    "version": "1.0",
-    "description": "Build an Extension!",
-    "manifest_version": 2,
-    "background": {
-        "scripts": [
-            "js/es6-promise.auto.min.js",
-            "js/defaults.js",
-            "js/speech.js",
-            "js/document.js",
-            "js/events.js",
-            "js/stt.js",
-            "js/listen.js"
-        ],
-        "persistent": false
-    },
-    "page_action": {
-        "default_popup": "popup.html",
-        "default_icon": {
-            "16": "images/img16.png",
-            "32": "images/img32.png",
-            "48": "images/img48.png",
-            "128": "images/img128.png"
-        }
-    },
-    "icons": {
-        "16": "images/img16.png",
-        "32": "images/img32.png",
-        "48": "images/img48.png",
-        "128": "images/img128.png"
+  "name": "Videology",
+  "version": "1.0",
+  "description": "BGN Hackathon",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
     }
+  },
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  },
+  "manifest_version": 2
 }
-
